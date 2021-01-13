@@ -1,0 +1,137 @@
+{
+	"mouseover": [
+		{
+			"selector": "input[name=s]",
+			"text": [
+				"找不到想看的就搜索试试吧"
+			]
+		},
+		{
+			"selector": ".index-item",
+			"text": [
+				"点进去看看嘛~"
+			]
+		},
+		{
+			"selector": "#l2d-home",
+			"text": [
+				"回到开始的地方"
+			]
+		},
+		{
+			"selector": "#l2d-change",
+			"text": [
+				"喜欢换装 Play 吗？"
+			]
+		},
+		{
+			"selector": "#l2d-message",
+			"text": [
+				"点一下，猜猜我会说什么？"
+			]
+		},
+		{
+			"selector": "#l2d-hide",
+			"text": [
+				"已经要说再见了吗"
+			]
+		},
+		{
+			"selector": "#l2d-photo",
+			"text": [
+				"想要给我照张相吗～"
+			]
+		},
+		{
+			"selector": "#l2d-about",
+			"text": [
+				"想知道更多关于我的事吗？"
+			]
+		},
+        {
+			"selector": "a[href=\"/\"]",
+			"text": [
+				"让我们回到开始的地方"
+			]
+		},
+		{
+			"selector": "#toggle-nav",
+			"text": [
+				"这里有更多页面哦"
+			]
+		},
+		{
+			"selector": "textarea[name=text]",
+			"text": [
+				"认真填写哦~"
+			]
+		},
+		{
+			"selector": ".OwO",
+			"text": [
+				"有许多可爱的表情呢！"
+			]
+		},
+		{
+			"selector": "input[name=author]",
+			"text": [
+				"你叫什么名字呢"
+			]
+		},
+		{
+			"selector": "input[name=mail]",
+			"text": [
+				"留下你的邮箱吧，不然就是无头像人士了。放心会保密的哦"
+			]
+		},
+		{
+			"selector": "input[name=url]",
+			"text": [
+				"你的家在哪里呀，我也想去参观呢"
+			]
+		},
+		{
+			"selector": "#submit",
+			"text": [
+				"检查好了吗~"
+			]
+		},
+		{
+			"selector": "span.next",
+			"text": [
+				"看看上一篇吧~"
+			]
+		},
+		{
+			"selector": "span.prev",
+			"text": [
+				"看看下一篇吧~"
+			]
+		},
+		{
+			"selector": "li.next",
+			"text": [
+				"看看下一页吧~"
+			]
+		},
+		{
+			"selector": "li.prev",
+			"text": [
+				"看看上一页吧~"
+			]
+		}
+	],
+	"click": [
+		{
+			"selector": "#live2d",
+			"text": [
+				"是…是不小心碰到了吧",
+				"萝莉控是什么呀",
+				"你看到我的小熊了吗",
+				"再摸的话我可要报警了！<br>⌇●﹏●⌇",
+				"110吗，这里有个变态一直在摸我<vr>(ó﹏ò｡)",
+				"哈哈~~好痒啊~~"
+			]
+		}
+	]
+}
