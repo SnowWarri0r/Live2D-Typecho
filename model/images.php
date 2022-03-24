@@ -33,20 +33,20 @@ function getfiles($path, $allowFiles, &$files = array()) {
  * @param $domain_list
  * @return true/false
  */
-function checkReferer($domain_list = array(
-)) {
-    $status = false;
-    $refer = $_SERVER['HTTP_REFERER']; //前一URL
-    if ($refer) {
-        $referhost = parse_url($refer);
-        /**来源地址主域名**/
-        $host = strtolower($referhost['host']);
-        if ($host == $_SERVER['HTTP_HOST'] || in_array($host, $domain_list)) {
-            $status = true;
-        }
-    }
-    return $status;
-}
+// function checkReferer($domain_list = array(
+// )) {
+//     $status = false;
+//     $refer = $_SERVER['HTTP_REFERER']; //前一URL
+//     if ($refer) {
+//         $referhost = parse_url($refer);
+//         /**来源地址主域名**/
+//         $host = strtolower($referhost['host']);
+//         if ($host == $_SERVER['HTTP_HOST'] || in_array($host, $domain_list)) {
+//             $status = true;
+//         }
+//     }
+//     return $status;
+// }
 
 //列出指定目录下的图片
 $CONFIG = array();
@@ -94,13 +94,13 @@ $imgNot = $_SERVER['DOCUMENT_ROOT'] . '/' . 'nonono.gif'; //无授权域名图�
 $refer = $_SERVER['HTTP_REFERER']; //前一URL
 
 //存在前一URL
-if ($refer) {
-    if (!checkReferer()) {
-        $karnc->getdir($imgNot);
-        $karnc->img2data();
-        $karnc->data2img();
-        die;
-    } else {
+// if ($refer) {
+//     if (!checkReferer()) {
+//         $karnc->getdir($imgNot);
+//         $karnc->img2data();
+//         $karnc->data2img();
+//         die;
+//     } else {
         if($cdn) {
         $karnc->redirectToURI($img,$cdn);
         }
@@ -110,11 +110,11 @@ if ($refer) {
             $karnc->data2img();
         }
         die;
-    }
-} else {
-    //直接访问API地址
-    $imgWeb = file_get_contents('imgweb.html');
-    echo $imgWeb;
-    die;
-}
+    // }
+// } else {
+//     //直接访问API地址
+//     $imgWeb = file_get_contents('imgweb.html');
+//     echo $imgWeb;
+//     die;
+// }
 ?>
