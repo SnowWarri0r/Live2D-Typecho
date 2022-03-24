@@ -89,6 +89,7 @@ class Live2D_Plugin implements Typecho_Plugin_Interface
             echo '<script>let cdn="'.Helper::options()->plugin('Live2D')->cdn.'"</script>';
         }
         echo '
+            <script>let cdn=""</script>
             <script type="text/javascript" src="/usr/plugins/Live2D/js/live2d.min.js?v='.Live2D_Plugin_VERSION.'"></script>
             <script type="text/javascript" src="/usr/plugins/Live2D/js/initlive2d.js?v='.Live2D_Plugin_VERSION.'"></script>
         ';
